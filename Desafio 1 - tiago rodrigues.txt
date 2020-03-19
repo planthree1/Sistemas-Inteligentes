@@ -1,0 +1,39 @@
+Tiago Ribau Rodrigues : 84040
+
+DESAFIO 1 - CONHECIMENTO E INFERENCIA
+
+Exercicio 1:
+	a)	 
+	Resposta:
+		não é possivel criar uma rede semantica para descrever este sistema pois  uma rede semantica utiliza ligações binarias para conjugar os seus elementos
+		logo não é possivel existir varias condições sobre o mesmo parametro (temperatura) que levem a mesma conclusão (ligar ou desligar)
+
+	b)
+	Resposta:
+		IF temp > 26 AND josé THEN ligar
+		IF temp < 20 AND josé THEN desligar
+		IF temp > 21 AND manuel THEN ligar
+		IF temp < 18 AND manuel THEN desligar
+		IF temp > 17 AND joaquim THEN ligar
+		IF temp < 11 AND joaquim THEN desligar
+	c)
+	Resposta:
+		P(u) = The person is u
+		A(l) = Ar codicionado está ligado
+		temp(x) = x é a temperatura 
+		
+		(temp(x) > 26 ∧ P(josé) : A(l))
+		(temp(x) < 20 ∧ P(josé) : ¬A(l))
+		(temp(x) > 21 ∧ P(manuel) : A(l))
+		(temp(x) > 18 ∧ P(manuel) : ¬A(l))
+		(temp(x) > 17 ∧ P(joaquim) : A(l))
+		(temp(x) > 11 ∧ P(joaquim) : ¬A(l))
+			
+Exercicio 2 :
+	Resposta:
+		A opção mais adequada para representar este sistema seria a opção b (regra de produçao pois o sistema é simples e possui poucas regras,
+		esta opção permite uma compreenção mais rapida do sistema.
+
+Exercicio 3 :
+	Resposta:
+		O codigo foi enviado em anexo

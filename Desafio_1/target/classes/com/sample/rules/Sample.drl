@@ -1,0 +1,46 @@
+package com.sample.rules;
+ 
+
+import com.sample.room;
+ 
+rule "Ligar ar codicionado José"
+    when
+    	$p : room(pessoa== "José" && temp > 26)
+    then
+        System.out.println("LIGADO:  para: " + $p.getPessoa() + " temperatura: " + $p.getTemp());
+end
+
+rule "Desligar ar codicionado José"
+    when
+    	$p : room(pessoa== "José" && temp < 20)
+    then
+        System.out.println("Desligado:  para: " + $p.getPessoa() + " temperatura: " + $p.getTemp());
+end
+
+rule "Ligar ar codicionado Manuel"
+    when
+    	$p : room(pessoa== "Manuel" && temp > 21)
+    then
+        System.out.println("LIGADO:  para: " + $p.getPessoa() + " temperatura: " + $p.getTemp());
+end
+
+rule "Desligar ar codicionado Manuel"
+    when
+    	$p : room(pessoa== "Manuel" && temp < 18)
+    then
+        System.out.println("Desligado:  para: " + $p.getPessoa() + " temperatura: " + $p.getTemp());
+end
+
+rule "Ligar ar codicionado Joaquim"
+    when
+    	$p : room(pessoa== "Joaquim" && temp > 17)
+    then
+        System.out.println("LIGADO:  para: " + $p.getPessoa() + " temperatura: " + $p.getTemp());
+end
+
+rule "Desligar ar codicionado Joaquim"
+    when
+    	$p : room(pessoa== "Joaquim" && temp < 11)
+    then
+        System.out.println("Desligado:  para: " + $p.getPessoa() + " temperatura: " + $p.getTemp());
+end
